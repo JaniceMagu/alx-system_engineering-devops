@@ -1,10 +1,2 @@
-#!/bin/bash
-file="iacta"
-
-# Check if the file exists
-if [ -e "$file" ]; then
-    # Use awk to display the third line
-    awk 'NR == 3' "$file"
-else
-    echo "File '$file' not found in the current directory."
-fi 
+#!/bin/bash/
+head -3 iacta |tail -1
